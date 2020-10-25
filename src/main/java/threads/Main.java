@@ -1,5 +1,8 @@
-//Prueba de conexion entre git-local y git-remote 
-//Por favor, al crear un repositorio para JAVA, por favor, agregar el pom.xml gracias
+/*
+Segun las paginas https://www.translatorscafe.com/unit-converter/es-ES/power/5-1/gigawatt-watt/?value=10 y 
+https://www.rapidtables.com/convert/power/gw-to-watt.html
+10 giga watt equivale a 10 000 000 000 watt
+*/
 
 package threads;
 
