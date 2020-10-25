@@ -1,5 +1,6 @@
 /*
 La empresa cuenta con una batería capaz de almacenar 10 GW
+Crear un hilo que tenga el tiempo del proceso llenar bateria
 */
 package threads;
 
