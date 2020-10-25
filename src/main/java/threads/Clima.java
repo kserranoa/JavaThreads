@@ -18,4 +18,6 @@ public class Clima {
         int r = lista.get(aleatorio.nextInt(lista.size()));
         double velocidad = r;
     }
+    
+    
 }
