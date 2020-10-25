@@ -4,12 +4,12 @@ Crear un hilo que tenga el tiempo del proceso llenar bateria
 */
 package threads;
 
-
+//TAL VEZ NO SE VAYA A UTILIZAR ESTA CLASS
 public class Bateria {
-    int capMax; 
-    int cantBaterias;
-    int cantCarga;
+    double capMax;    
+    double cantCarga;
+    double tiempo; 
     
     // if (cantCarga < 10000){
-// calcEnergia} 
+    // calcEnergia} 
 }
