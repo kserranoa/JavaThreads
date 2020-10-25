@@ -7,17 +7,31 @@ Cuando hay falta de energía en la batería deben continuar produciendo energía
 package threads;
 
 
-public class Generador {
-    //Array rapidez[] = poca(90), normal(60), intemerdia(40), rapida(30);
-    int watt = 100;
-    int cantGen; 
+public class Generador implements Runnable{    
+    Thread t;
+    double wattPORgenerador = 100;
+    double cantGen; 
+    double capacidadMAXbateria = 10001;
+    double capacidadBateria = 0;
     /*    
     Velocidades rápidas producen 100 W en 30 segundos
     Velocidades intermedias produzcan 100 W en 40 segundos    
     Velocdiad normal produzcan 100 W en 60 segundos
     Velocidad se producen 100 W en 90 segundos    
+    CADA 2 MINUTOS DEBE CAMBIAR EL CLIMA (VELOCIDAD)
     */
     
-    // if rapidez {establecerVel}
-    // calcEnergia = rapidez * watt * cantGen; 
+    //Constructor 
+    public Generador(){
+        t = new Thread(this, "Generador #");
+        t.start();
+    }
+    
+    //Metodo para generar carga 
+    public void run(){
+        while (capacidadBateria < capacidadMAXbateria) {
+            System.out.println(capacidadBateria);
+            capacidadBateria++;
+        }
+    }
 }
