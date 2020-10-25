@@ -6,11 +6,10 @@ https://www.rapidtables.com/convert/power/gw-to-watt.html
 
 package threads;
 
-
 public class Main {
 
     public static void main(String[] args) {
-      
+        Generador generador1 = new Generador();
     }
 
 }
