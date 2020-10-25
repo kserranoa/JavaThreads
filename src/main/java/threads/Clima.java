@@ -1,5 +1,5 @@
 /*
-El clima va a cambiar cada 2 minutos
+El clima va a cambiar cada 2 minutos, pero el cambio de clima se va a realizar en la class Generador
 */
 package threads;
 import java.util.Arrays;
@@ -17,9 +17,9 @@ public class Clima {
     //Metodo para establecer la velocidad
     public void establecerVelocidad(){
         /*
-        De manera aleatoria va escoger una velocidad del clima (rapido 30, intermedio 40, normal 60 y lento 90)
+        De manera aleatoria va a escoger una velocidad del clima (rapido 30, intermedio 40, normal 60 y lento 90)
         */
-         List<Integer> lista = Arrays.asList(30, 40, 60, 90);
+        List<Integer> lista = Arrays.asList(30, 40, 60, 90);
         Random aleatorio = new Random();
         int r = lista.get(aleatorio.nextInt(lista.size()));
         double velocidad = r;
