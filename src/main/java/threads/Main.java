@@ -9,7 +9,9 @@ package threads;
 public class Main {
 
     public static void main(String[] args) {
-        Generador generador1 = new Generador();
+        Generador generador1 = new Generador("Generador 1");
+        Generador generador2 = new Generador("Generador 2");
+        Generador generador3 = new Generador("Generador 3");
     }
 
 }
