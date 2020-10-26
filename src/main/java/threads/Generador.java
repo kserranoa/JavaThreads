@@ -6,13 +6,13 @@ Cuando hay falta de energía en la batería deben continuar produciendo energía
 */
 package threads;
 
-
 public class Generador implements Runnable{    
     Thread t;
     double wattPORgenerador = 100;
     double cantGen; 
     double capacidadMAXbateria = 10001;
     double capacidadBateria = 0;
+    String nombreGenerador;
     /*    
     Velocidades rápidas producen 100 W en 30 segundos
     Velocidades intermedias produzcan 100 W en 40 segundos    
@@ -27,11 +27,23 @@ public class Generador implements Runnable{
         t.start();
     }
     
+        //Constructor nombre del generador 
+    public Generador(String nombreGenerador){
+        this.nombreGenerador = nombreGenerador;
+        t = new Thread(this, "Generador #");        
+    }
+    
     //Metodo para generar carga 
     public void run(){
-        while (capacidadBateria < capacidadMAXbateria) {
-            System.out.println(capacidadBateria);
-            capacidadBateria++;
-        }
+        try{
+            while (capacidadBateria < capacidadMAXbateria) {
+                System.out.println(nombreGenerador);                
+                capacidadBateria++;                
+                System.out.println(capacidadBateria);
+                Thread.sleep(100);
+            }
+            
+        }catch(Exception e){};
+        
     }
 }
