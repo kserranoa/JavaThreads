@@ -12,6 +12,10 @@ public class Main {
         Generador generador1 = new Generador("Generador 1");
         Generador generador2 = new Generador("Generador 2");
         Generador generador3 = new Generador("Generador 3");
+        generador1.run();
+        generador2.run();
+        generador3.run();
+        
     }
 
 }
